@@ -7,6 +7,7 @@ import { theme } from "./theme";
 import Layout from "./components/Layout";
 import App from "./App";
 import { Colors } from "./components/Colors";
+import { Typography } from "./components/Typography";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/colors",
     element: <Colors />,
+  },
+  {
+    path: "/typography",
+    element: <Typography />,
   },
 ]);
 

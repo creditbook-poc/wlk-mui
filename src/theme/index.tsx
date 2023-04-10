@@ -32,6 +32,8 @@ declare module "@mui/material/styles" {
   }
 
   interface TypographyVariants {
+    h7: React.CSSProperties,
+    h8: React.CSSProperties,
     bodyLarge: React.CSSProperties;
     bodyLargeBold: React.CSSProperties;
     bodyMedium: React.CSSProperties;
@@ -43,6 +45,8 @@ declare module "@mui/material/styles" {
   }
 
   interface TypographyVariantsOptions {
+    h7?: React.CSSProperties,
+    h8?: React.CSSProperties,
     bodyLarge?: React.CSSProperties;
     bodyLargeBold?: React.CSSProperties;
     bodyMedium?: React.CSSProperties;
@@ -56,6 +60,8 @@ declare module "@mui/material/styles" {
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
+    h7: true,
+    h8: true,
     bodyLarge: true;
     bodyLargeBold: true;
     bodyMedium: true;
