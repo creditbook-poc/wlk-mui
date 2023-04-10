@@ -4,8 +4,9 @@ import './App.css'
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { theme } from "./theme";
-import Layout from "./components";
+import Layout from "./components/Layout";
 import App from "./App";
+import { Colors } from "./components/Colors";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/layout",
     element: <Layout />,
+  },
+  {
+    path: "/colors",
+    element: <Colors />,
   },
 ]);
 
