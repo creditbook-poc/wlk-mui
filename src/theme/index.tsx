@@ -10,6 +10,7 @@ import {
   successColorPalette,
   warningColorPalette,
 } from "./colors";
+import { variants } from "./typography";
 
 declare module "@mui/material/styles" {
   interface Theme {
@@ -29,6 +30,34 @@ declare module "@mui/material/styles" {
   interface SimplePaletteColorOptions {
     extraLight?: string;
   }
+
+  interface TypographyVariants {
+    bodyLarge: React.CSSProperties;
+    bodyLargeBold: React.CSSProperties;
+    bodyMedium: React.CSSProperties;
+    bodyMediumBold: React.CSSProperties;
+    bodySmall: React.CSSProperties;
+    bodySmallBold: React.CSSProperties;
+    bodyXSmall: React.CSSProperties;
+    bodyXSmallBold: React.CSSProperties;
+  }
+
+  interface TypographyVariantsOptions {
+    bodyLarge?: React.CSSProperties;
+    bodyLargeBold?: React.CSSProperties;
+    bodyMedium?: React.CSSProperties;
+    bodyMediumBold?: React.CSSProperties;
+    bodySmall?: React.CSSProperties;
+    bodySmallBold?: React.CSSProperties;
+    bodyXSmall?: React.CSSProperties;
+    bodyXSmallBold?: React.CSSProperties;
+  }
+}
+
+declare module "@mui/material/Typography" {
+  interface TypographyPropsVariantOverrides {
+    bodyLarge: true;
+  }
 }
 
 export const theme = createTheme({
@@ -40,5 +69,9 @@ export const theme = createTheme({
     warning: warningColorPalette,
     error: dangerColorPalette,
     info: infoColorPalette,
+  },
+  typography: {
+    fontFamily: ["Roboto", "Gilmer"].join(","),
+    ...variants,
   },
 });

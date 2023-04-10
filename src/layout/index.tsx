@@ -41,7 +41,7 @@ function Layout() {
         <Typography variant="h5">I'm inside a container</Typography>
       </Container>
 
-      <Typography marginY={2} variant="h5">
+      <Typography marginY={2} variant="bodyLarge">
         Grid - mui grid
       </Typography>
       <Grid2 container spacing={2}>
