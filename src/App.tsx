@@ -1,8 +1,20 @@
-import Layout from "./layout";
+import { Stack, Typography } from "@mui/material";
+import Layout from "./components";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <Layout />
+    <>
+      <Typography mt={5} textAlign="center" variant="h1">
+        WLK MUI demo
+      </Typography>
+      <Stack mt={5} textAlign='center'>
+        <Link to={"/layout"}>Layout system</Link>
+        <Link to={"/colors"}>Colors</Link>
+        <Link to={"/typography"}>Typography</Link>
+        <Link to={"/components"}>Components</Link>
+      </Stack>
+    </>
   );
 }
 
