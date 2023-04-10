@@ -1,97 +1,81 @@
 export const variants = {
   h1: {
-    fontSize: "1.75rem",
+    fontSize: 28,
     fontFamily: "gilmer-bold",
-    lineHeight: "2.5rem",
   },
 
   h2: {
-    fontSize: "1.5rem",
+    fontSize: 24,
     fontFamily: "gilmer-bold",
-    lineHeight: "2rem",
   },
 
   h3: {
-    fontSize: "1.375rem",
+    fontSize: 22,
     fontFamily: "gilmer-bold",
-    lineHeight: "2rem",
   },
 
   h4: {
-    fontSize: "1.125rem",
+    fontSize: 18,
     fontFamily: "gilmer-bold",
-    lineHeight: "1.5rem",
   },
 
   h5: {
-    fontSize: "1rem",
+    fontSize: 16,
     fontFamily: "gilmer-bold",
-    lineHeight: "1.5rem",
   },
 
   h6: {
-    fontSize: "1rem",
+    fontSize: 16,
     fontFamily: "gilmer-medium",
-    lineHeight: "1.5rem",
   },
 
   h7: {
-    fontSize: "0.875rem",
+    fontSize: 14,
     fontFamily: "gilmer-medium",
-    lineHeight: "1.5rem",
   },
 
   h8: {
-    fontSize: "0.75rem",
+    fontSize: 12,
     fontFamily: "gilmer-medium",
-    lineHeight: "1rem",
   },
 
   bodyLarge: {
-    fontSize: "1rem",
+    fontSize: 16,
     fontFamily: "roboto-regular",
-    lineHeight: "1.5rem",
   },
 
   bodyLargeBold: {
-    fontSize: "1rem",
+    fontSize: 16,
     fontFamily: "roboto-medium",
-    lineHeight: "1.5rem",
   },
 
   bodyMedium: {
-    fontSize: "0.875rem",
+    fontSize: 14,
     fontFamily: "roboto-regular",
-    lineHeight: "1.5rem",
   },
 
   bodyMediumBold: {
-    fontSize: "0.875rem",
+    fontSize: 14,
     fontFamily: "roboto-medium",
-    lineHeight: "1.5rem",
   },
 
   bodySmall: {
-    fontSize: "0.75rem",
+    fontSize: 12,
     fontFamily: "roboto-regular",
-    lineHeight: "1rem",
   },
 
   bodySmallBold: {
-    fontSize: "0.75rem",
+    fontSize: 12,
     fontFamily: "roboto-medium",
-    lineHeight: "1rem",
   },
 
   bodyXSmall: {
-    fontSize: "0.625",
+    fontSize: 10,
     fontFamily: "roboto-regular",
-    lineHeight: "1rem",
   },
 
   bodyXSmallBold: {
-    fontSize: "0.625",
+    fontSize: 10,
     fontFamily: "roboto-medium",
-    lineHeight: "1rem",
   }
 };

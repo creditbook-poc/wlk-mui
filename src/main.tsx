@@ -8,6 +8,7 @@ import Layout from "./components/Layout";
 import App from "./App";
 import { Colors } from "./components/Colors";
 import { Typography } from "./components/Typography";
+import { LedgerHome } from "./screen/LedgerHome";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/typography",
     element: <Typography />,
+  },
+  {
+    path: "/example",
+    element: <LedgerHome />,
   },
 ]);
 
