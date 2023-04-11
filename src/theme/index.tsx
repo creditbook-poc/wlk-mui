@@ -1,17 +1,15 @@
 import { createTheme } from "@mui/material";
 import {
   backgroundColorPalette,
-  backgroundColorPaletteType,
   dangerColorPalette,
   foregroundColorPalette,
-  foregroundColorPaletteType,
   infoColorPalette,
   primaryColorPalette,
   successColorPalette,
   warningColorPalette,
 } from "./colors";
 import { variants } from "./typography";
-import "./index.d"
+import "./index.d";
 
 export const theme = createTheme({
   background: backgroundColorPalette,
