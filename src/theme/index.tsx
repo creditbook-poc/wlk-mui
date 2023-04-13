@@ -14,6 +14,9 @@ import "./index.d";
 export const theme = createTheme({
   background: backgroundColorPalette,
   foreground: foregroundColorPalette,
+  images: {
+    logo: "https://picsum.photos/200"
+  },
   palette: {
     primary: primaryColorPalette,
     success: successColorPalette,

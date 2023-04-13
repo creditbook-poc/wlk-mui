@@ -2,16 +2,19 @@ import {
   backgroundColorPaletteType,
   foregroundColorPaletteType,
 } from "./colors";
+import { ImageType } from "./images";
 
 declare module "@mui/material/styles" {
   interface Theme {
     background: backgroundColorPaletteType;
     foreground: foregroundColorPaletteType;
+    images?: ImageType;
   }
 
   interface ThemeOptions {
     background: backgroundColorPaletteType;
     foreground: foregroundColorPaletteType;
+    images?: ImageType;
   }
 
   interface PaletteColor {

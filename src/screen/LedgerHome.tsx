@@ -49,7 +49,7 @@ export function LedgerHome() {
         bgcolor={theme.background.cardSuccess}
         height="12%"
       >
-        <Avatar sx={{ width: 45, height: 45, marginLeft: 2 }} />
+        <Avatar sx={{ width: 45, height: 45, marginLeft: 2 }} src={theme.images?.logo} />
         <Box marginX={1} display="flex" justifyContent="space-between" flex={1}>
           <Box>
             <Typography variant="h7">RetailPay</Typography>
