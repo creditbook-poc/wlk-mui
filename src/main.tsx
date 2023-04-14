@@ -9,6 +9,7 @@ import App from "./App";
 import { Colors } from "./components/Colors";
 import { Typography } from "./components/Typography";
 import { LedgerHome } from "./screen/LedgerHome";
+import { LayoutExample } from "./components/LayoutExample";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/example",
     element: <LedgerHome />,
+  },
+  {
+    path: "/layoutExample",
+    element: <LayoutExample />,
   },
 ]);
 

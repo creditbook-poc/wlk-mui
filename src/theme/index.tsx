@@ -10,13 +10,12 @@ import {
 } from "./colors";
 import { variants } from "./typography";
 import "./index.d";
+import { images } from "./images";
 
 export const theme = createTheme({
   background: backgroundColorPalette,
   foreground: foregroundColorPalette,
-  images: {
-    logo: "https://picsum.photos/200"
-  },
+  images: images,
   palette: {
     primary: primaryColorPalette,
     success: successColorPalette,
