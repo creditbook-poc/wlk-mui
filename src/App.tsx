@@ -14,6 +14,7 @@ function App() {
         <Link to={"/example"}>Example</Link>
         <Link to={"/boxLayout"}>Layout Using Box</Link>
         <Link to={"/gridLayout"}>Layout Using Grid</Link>
+        <Link to={"/custom"}>Custom Component Example</Link>
       </Stack>
     </>
   );
