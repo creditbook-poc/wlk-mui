@@ -10,6 +10,7 @@ import { Colors } from "./components/Colors";
 import { Typography } from "./components/Typography";
 import { LedgerHome } from "./screen/LedgerHome";
 import { BoxLayout } from "./components/BoxLayout";
+import { GridLayout } from "./components/GridLayout";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/boxLayout",
     element: <BoxLayout />,
+  },
+  {
+    path: "/gridLayout",
+    element: <GridLayout />,
   },
 ]);
 
