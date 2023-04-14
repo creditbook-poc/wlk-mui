@@ -12,7 +12,7 @@ function App() {
         <Link to={"/colors"}>Colors</Link>
         <Link to={"/typography"}>Typography</Link>
         <Link to={"/example"}>Example</Link>
-        <Link to={"/layoutExample"}>Layout Example</Link>
+        <Link to={"/boxLayout"}>Layout Using Box</Link>
       </Stack>
     </>
   );
