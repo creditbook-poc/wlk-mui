@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import './App.css'
+import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { theme } from "./theme";
@@ -12,6 +12,7 @@ import { LedgerHome } from "./screen/LedgerHome";
 import { BoxLayout } from "./components/BoxLayout";
 import { GridLayout } from "./components/GridLayout";
 import { CustomComponent } from "./components/CustomComponent";
+import { PayNow } from "./screen/PayNow";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: "/custom",
     element: <CustomComponent />,
+  },
+  {
+    path: "/payNow",
+    element: <PayNow />,
   },
 ]);
 
