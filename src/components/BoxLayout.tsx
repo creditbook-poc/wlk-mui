@@ -4,7 +4,7 @@ export const BoxLayout = () => {
   return (
     <>
       <Typography variant="h2">Simple flex layout (row)</Typography>
-      <Box display="flex" height={"25vh"} columnGap={2} ml={2} mt={2}>
+      <Box display="flex" height={"25vh"} columnGap={2} ml={2} mt={2} border='dashed' >
         <Box width={100} height={100} bgcolor="primary.dark" />
         <Box width={100} height={100} bgcolor="primary.dark" />
       </Box>
@@ -17,6 +17,7 @@ export const BoxLayout = () => {
         rowGap={2}
         ml={2}
         mt={2}
+        border='dashed' 
       >
         <Box width={100} height={100} bgcolor="primary.dark" />
         <Box width={100} height={100} bgcolor="primary.dark" />
@@ -29,10 +30,12 @@ export const BoxLayout = () => {
         display="flex"
         flexDirection="row"
         justifyContent="center"
+        alignItems='center'
         height={"25vh"}
         columnGap={2}
         ml={2}
         mt={2}
+        border='dashed' 
       >
         <Box width={100} height={100} bgcolor="primary.dark" />
         <Box width={100} height={100} bgcolor="primary.dark" />
@@ -49,6 +52,7 @@ export const BoxLayout = () => {
         columnGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box width={100} height={100} bgcolor="primary.dark" />
         <Box width={100} height={100} bgcolor="primary.dark" />
@@ -65,6 +69,7 @@ export const BoxLayout = () => {
         columnGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box width={100} height={100} bgcolor="primary.dark" />
         <Box width={100} height={100} bgcolor="primary.dark" />
@@ -81,6 +86,7 @@ export const BoxLayout = () => {
         columnGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box width={100} height={100} bgcolor="primary.dark" />
         <Box width={100} height={100} bgcolor="primary.dark" />
@@ -97,6 +103,7 @@ export const BoxLayout = () => {
         columnGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box width={100} height={100} bgcolor="primary.dark" />
         <Box width={100} height={100} bgcolor="primary.dark" />
@@ -113,6 +120,7 @@ export const BoxLayout = () => {
         columnGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box width={100} height={100} bgcolor="primary.dark" />
         <Box width={100} height={100} bgcolor="primary.dark" />
@@ -129,6 +137,7 @@ export const BoxLayout = () => {
         rowGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box width={100} height={100} bgcolor="primary.dark" />
         <Box width={100} height={100} bgcolor="primary.dark" />
@@ -145,6 +154,7 @@ export const BoxLayout = () => {
         rowGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box width={100} height={100} bgcolor="primary.dark" />
         <Box width={100} height={100} bgcolor="primary.dark" />
@@ -161,6 +171,7 @@ export const BoxLayout = () => {
         rowGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box width={100} height={100} bgcolor="primary.dark" />
         <Box width={100} height={100} bgcolor="primary.dark" />
@@ -177,6 +188,7 @@ export const BoxLayout = () => {
         columnGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box flexGrow={1} width={100} height={100} bgcolor="primary.dark" />
         <Box width={100} height={100} bgcolor="primary.dark" />
@@ -193,6 +205,7 @@ export const BoxLayout = () => {
         columnGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box flex={1} width={100} height={100} bgcolor="primary.dark" />
         <Box flex={1} width={100} height={100} bgcolor="primary.dark" />
@@ -209,6 +222,7 @@ export const BoxLayout = () => {
         columnGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box flex={1} width={100} height={100} bgcolor="primary.dark" />
         <Box flex={2} width={100} height={100} bgcolor="primary.dark" />
@@ -225,6 +239,7 @@ export const BoxLayout = () => {
         rowGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box flex={1} width={100} height={100} bgcolor="primary.dark" />
         <Box flex={2} width={100} height={100} bgcolor="primary.dark" />
@@ -241,6 +256,7 @@ export const BoxLayout = () => {
         rowGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box flex={4} width={100} height={100} bgcolor="primary.dark" />
         <Box flex={2} width={100} height={100} bgcolor="primary.dark" />
@@ -257,6 +273,7 @@ export const BoxLayout = () => {
         rowGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box flex={1} width={100} height={100} bgcolor="primary.dark" />
         <Box flex={4} width={100} height={100} bgcolor="primary.dark" />
@@ -273,6 +290,7 @@ export const BoxLayout = () => {
         columnGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box alignSelf='center' width={100} height={100} bgcolor="primary.dark" />
         <Box alignSelf='end' width={100} height={100} bgcolor="primary.dark" />
@@ -289,6 +307,7 @@ export const BoxLayout = () => {
         columnGap={2}
         marginX={2}
         mt={2}
+        border='dashed' 
       >
         <Box alignSelf='center' width={100} height={100} bgcolor="primary.dark" />
         <Box alignSelf='end' width={100} height={100} bgcolor="primary.dark" />
