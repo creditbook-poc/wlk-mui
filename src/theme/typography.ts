@@ -77,5 +77,20 @@ export const variants = {
   bodyXSmallBold: {
     fontSize: 10,
     fontFamily: "roboto-medium",
+  },
+
+  buttonLarge: {
+    fontSize: 16,
+    fontFamily: "roboto-medium"
+  },
+
+  buttonMedium: {
+    fontSize: 14,
+    fontFamily: "roboto-medium"
+  },
+
+  buttonSmall: {
+    size: 12,
+    fontFamily: "roboto-medium"
   }
 };
