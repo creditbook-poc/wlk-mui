@@ -1,4 +1,5 @@
+import { Loan } from "../../models";
+
 export interface OfferBannerProps {
-  totalAmount: number;
-  discount: number;
+  loan: Loan;
 }

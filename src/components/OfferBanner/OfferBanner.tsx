@@ -2,11 +2,11 @@ import { Box, Typography, useTheme } from "@mui/material";
 import { OfferBannerProps } from "./OfferBannerProps";
 
 export const OfferBanner: React.FC<OfferBannerProps> = ({
-  totalAmount,
-  discount,
+  loan,
 }: OfferBannerProps) => {
   const theme = useTheme();
 
+  const offerAmount = loan.getMaxOutstanding() - loan.getOutstandingTillDate();
   return (
     <Box
       display="flex"
@@ -31,7 +31,7 @@ export const OfferBanner: React.FC<OfferBannerProps> = ({
             WebkitTextFillColor: "transparent",
           }}
         >
-          Rs. {discount.toLocaleString()} bachayen!
+          Rs. {offerAmount.toLocaleString()} bachayen!
         </Typography>
       </Box>
       <Box
@@ -49,7 +49,7 @@ export const OfferBanner: React.FC<OfferBannerProps> = ({
           Pay only
         </Typography>
         <Typography variant="h5" color={theme.background.appBg}>
-          Rs. {(totalAmount - discount).toLocaleString()}*
+          Rs. {loan.getOutstandingTillDate().toLocaleString()}*
         </Typography>
       </Box>
       <Box
@@ -70,7 +70,7 @@ export const OfferBanner: React.FC<OfferBannerProps> = ({
             textDecorationColor: theme.background.overlayBlack,
           }}
         >
-          Rs. {totalAmount.toLocaleString()}
+          Rs. {loan.getMaxOutstanding().toLocaleString()}
         </Typography>
       </Box>
     </Box>

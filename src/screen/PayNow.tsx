@@ -15,6 +15,7 @@ import { Search } from "@mui/icons-material";
 import { Header } from "../components/Header/Header";
 import { HorizontalCard } from "../components/HorizontalCard/HorizontalCard";
 import { OfferBanner } from "../components/OfferBanner/OfferBanner";
+import { Loan, LoanDto } from "../models";
 
 export function PayNow() {
   const theme = useTheme();
@@ -25,11 +26,13 @@ export function PayNow() {
     },
   }));
 
+  const loan = new Loan({} as LoanDto);
+
   return (
     <>
       <Header text="Adaiyagi Karein" isHelpButtonEnabled />
       <Box display="flex" flexDirection="column" pt={2} px={2}>
-        <OfferBanner totalAmount={21800} discount={1300} />
+        <OfferBanner loan={loan} />
         <Typography
           variant="bodySmall"
           color={theme.foreground.mediumEmphasis}
@@ -50,14 +53,14 @@ export function PayNow() {
             iconName="phonelink_ring"
             text="1Bill"
             isSelected={false}
-            onTouchEnd={() => console.log("1Bill clicked")}
+            onClick={() => console.log("1Bill Clicked")}
             mr={1}
           />
           <HorizontalCard
             iconName="money"
             text="Cash via FSO"
             isSelected={true}
-            onTouchEnd={() => console.log("CashViaFSO clicked")}
+            onClick={() => console.log("CashViaFSO clicked")}
           />
         </Box>
       </Box>
