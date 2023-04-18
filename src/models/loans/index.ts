@@ -7,3 +7,4 @@ export * from './loanMarkup.model';
 export * from './loanMarkupList.model';
 export * from './loanTransaction.model';
 export * from './loanTransactionList.model';
+export * from './paymentInvoice.model';
