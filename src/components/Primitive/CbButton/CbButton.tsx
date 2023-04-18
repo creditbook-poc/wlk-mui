@@ -19,8 +19,8 @@ const LargeButton = styled(Button)<ButtonProps>(({ theme }) => ({
 }));
 
 export const CbButton: React.FC<CbButtonProps> = ({
-  text,
   size,
+  children,
   ...buttonProps
 }) => {
   const buttonSizeMap = {
@@ -33,7 +33,7 @@ export const CbButton: React.FC<CbButtonProps> = ({
 
   return (
     <ButtonComponent {...buttonProps}>
-      <Typography {...text} />
+      {children}
     </ButtonComponent>
   );
 };

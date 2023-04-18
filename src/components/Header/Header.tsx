@@ -20,7 +20,9 @@ export const Header: React.FC<HeaderProps> = ({
         <Typography variant="h4">{text}</Typography>
       </Box>
       {isHelpButtonEnabled && (
-        <CbButton variant='outlined' size='small' text={{ children: 'Help', variant: 'bodyXSmallBold' }} />
+        <CbButton variant="outlined" size="small">
+          <Typography variant="bodyXSmallBold">Help</Typography>
+        </CbButton>
       )}
     </Box>
   );

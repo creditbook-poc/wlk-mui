@@ -1,8 +1,9 @@
-import { ButtonProps, TypographyProps } from "@mui/material";
+import { ButtonProps } from "@mui/material";
+import React from "react";
 
 export interface CbButtonProps extends ButtonProps {
   /**
-   * text to be displayed inside the button
+   * Component or string passed to button
    */
-  text: TypographyProps;
+  children: React.ReactNode;
 }
