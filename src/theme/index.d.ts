@@ -19,10 +19,14 @@ declare module "@mui/material/styles" {
 
   interface PaletteColor {
     extraLight?: string;
+    gradientDark?: string;
+    gradientLight?: string;
   }
 
   interface SimplePaletteColorOptions {
     extraLight?: string;
+    gradientDark?: string;
+    gradientLight?: string;
   }
 
   interface TypographyVariants {
