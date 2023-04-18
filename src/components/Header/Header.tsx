@@ -1,6 +1,6 @@
 import { Box, Button, Icon, Typography } from "@mui/material";
 import { HeaderProps } from "./HeaderProps";
-import { CbButton } from "../CbButton/CbButton";
+import { CbButton } from "../Primitive/CbButton/CbButton";
 
 export const Header: React.FC<HeaderProps> = ({
   text,
