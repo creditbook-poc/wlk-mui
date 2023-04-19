@@ -19,10 +19,14 @@ declare module "@mui/material/styles" {
 
   interface PaletteColor {
     extraLight?: string;
+    gradientDark?: string;
+    gradientLight?: string;
   }
 
   interface SimplePaletteColorOptions {
     extraLight?: string;
+    gradientDark?: string;
+    gradientLight?: string;
   }
 
   interface TypographyVariants {
@@ -36,6 +40,9 @@ declare module "@mui/material/styles" {
     bodySmallBold: React.CSSProperties;
     bodyXSmall: React.CSSProperties;
     bodyXSmallBold: React.CSSProperties;
+    buttonLarge: React.CSSProperties;
+    buttonMedium: React.CSSProperties;
+    buttonSmall: React.CSSProperties;
   }
 
   interface TypographyVariantsOptions {
@@ -49,6 +56,9 @@ declare module "@mui/material/styles" {
     bodySmallBold?: React.CSSProperties;
     bodyXSmall?: React.CSSProperties;
     bodyXSmallBold?: React.CSSProperties;
+    buttonLarge?: React.CSSProperties;
+    buttonMedium?: React.CSSProperties;
+    buttonSmall?: React.CSSProperties;
   }
 }
 
@@ -64,5 +74,8 @@ declare module "@mui/material/Typography" {
     bodySmallBold: true;
     bodyXSmall: true;
     bodyXSmallBold: true;
+    buttonLarge: true;
+    buttonMedium: true;
+    buttonSmall: true;
   }
 }

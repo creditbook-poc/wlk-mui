@@ -1,10 +1,11 @@
-import { Box, Typography } from "@mui/material";
-import { theme } from "../../theme";
+import { Box, Typography, useTheme } from "@mui/material";
 import { OfferBannerProps } from "./OfferBannerProps";
 
 export const OfferBanner: React.FC<OfferBannerProps> = ({
   loan,
 }: OfferBannerProps) => {
+  const theme = useTheme();
+
   const offerAmount = loan.getMaxOutstanding() - loan.getOutstandingTillDate();
   return (
     <Box
@@ -14,7 +15,9 @@ export const OfferBanner: React.FC<OfferBannerProps> = ({
       paddingY={1.5}
       boxShadow={1}
       borderRadius={2}
-      sx={{ background: "linear-gradient(to right, #267755, #339F71)" }}
+      sx={{
+        background: `linear-gradient(to right, ${theme.palette.primary.main}, ${theme.palette.primary.extraLight})`,
+      }}
     >
       <Box flexDirection={"column"}>
         <Typography variant="h6" color={theme.background.appBg}>
@@ -23,7 +26,7 @@ export const OfferBanner: React.FC<OfferBannerProps> = ({
         <Typography
           variant="h6"
           sx={{
-            background: "linear-gradient(-100deg, #24AE00, #C7FF29)",
+            background: `linear-gradient(-100deg, ${theme.palette.primary.gradientDark}, ${theme.palette.primary.gradientLight})`,
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           }}
@@ -64,7 +67,7 @@ export const OfferBanner: React.FC<OfferBannerProps> = ({
           sx={{
             textDecorationLine: "line-through",
             textDecorationStyle: "solid",
-            textDecorationColor: "#000000",
+            textDecorationColor: theme.background.overlayBlack,
           }}
         >
           Rs. {loan.getMaxOutstanding().toLocaleString()}

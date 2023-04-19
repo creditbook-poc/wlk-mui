@@ -1,5 +1,6 @@
 import { Box, Button, Icon, Typography } from "@mui/material";
 import { HeaderProps } from "./HeaderProps";
+import { CbButton } from "../Primitive/CbButton/CbButton";
 
 export const Header: React.FC<HeaderProps> = ({
   text,
@@ -19,9 +20,9 @@ export const Header: React.FC<HeaderProps> = ({
         <Typography variant="h4">{text}</Typography>
       </Box>
       {isHelpButtonEnabled && (
-        <Button variant="outlined" size="small">
-          Help
-        </Button>
+        <CbButton variant="outlined" size="small">
+          <Typography variant="bodyXSmallBold">Help</Typography>
+        </CbButton>
       )}
     </Box>
   );

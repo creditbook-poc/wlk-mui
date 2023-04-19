@@ -3,6 +3,8 @@ export const primaryColorPalette = {
   dark: "#206347",
   light: "#2C8B63",
   extraLight: "#339F71",
+  gradientDark: "#24AE00",
+  gradientLight: "#C7FF29",
 };
 
 export const successColorPalette = {
