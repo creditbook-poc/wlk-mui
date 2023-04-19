@@ -23,12 +23,12 @@ export class PaymentInvoice extends Entity<PaymentInvoiceDto> {
     return this.dto.invoice_amount ?? 0;
   }
 
-  get cbFee(): number {
-    return this.dto.cb_fee ?? 0;
-  }
-
   get userFee(): number {
     return this.dto.user_fee ?? 0;
+  }
+
+  get amountWithinDueDate(): number {
+    return this.dto.amount_within_due_date ?? 0;
   }
 
   getExpiryDate(): Moment {
@@ -38,7 +38,7 @@ export class PaymentInvoice extends Entity<PaymentInvoiceDto> {
   getDueDate(): Moment {
     return moment(this.dueDate ?? "");
   }
-  
+
   getTransactionFee(): number {
     return this.cbFee + this.userFee;
   }
