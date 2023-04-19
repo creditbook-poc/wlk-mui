@@ -13,6 +13,7 @@ import { BoxLayout } from "./components/BoxLayout";
 import { GridLayout } from "./components/GridLayout";
 import { CustomComponent } from "./components/CustomComponent";
 import { PayNow } from "./screen/PayNow";
+import { InvoiceDetails } from "./screen/InvoiceDetails";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: "/payNow",
     element: <PayNow />,
+  },
+  {
+    path: "/invoice",
+    element: <InvoiceDetails />,
   },
 ]);
 
