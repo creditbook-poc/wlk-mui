@@ -117,7 +117,7 @@ export const InvoiceDetails = () => {
       </Box>
       <Grid
         container
-        spacing={2}
+        spacing={1}
         paddingBottom={2}
         paddingX={3}
         height="100%"
