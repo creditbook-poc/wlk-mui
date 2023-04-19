@@ -2,6 +2,7 @@ import { Download, InfoOutlined } from "@mui/icons-material";
 import { Box, Grid, Typography, useTheme } from "@mui/material";
 import { CbButton } from "../components/Primitive/CbButton/CbButton";
 import { Header } from "../components/Header/Header";
+import { InfoBanner } from "../components/InfoBanner/InfoBanner";
 
 export const InvoiceDetails = () => {
   const theme = useTheme();
@@ -15,22 +16,11 @@ export const InvoiceDetails = () => {
       overflow="hidden"
     >
       <Header isHelpButtonEnabled text="Adayigi Karein" />
-      <Box
-        alignItems="center"
-        bgcolor={theme.background.cardImportant}
-        borderRadius={3}
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        marginX={3}
-        marginTop={2}
-        paddingY={2}
-      >
-        <InfoOutlined color="info" />
-        <Typography variant="bodyXSmall" textAlign="center">
-          Yeh 1Bill invoice 17/02/23 1:32 PM par expire hojaye gi, jiskay baad
-          aapko dobara nayi invoice banani hogi
-        </Typography>
+      <Box marginX={3} marginTop={2}>
+        <InfoBanner
+          text="Yeh 1Bill invoice 17/02/23 1:32 PM par expire hojaye gi, jiskay baad
+        aapko dobara nayi invoice banani hogi"
+        />
       </Box>
       <Box
         bgcolor={theme.background.surfaceBasic}
