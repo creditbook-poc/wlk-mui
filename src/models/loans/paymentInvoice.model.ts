@@ -40,6 +40,6 @@ export class PaymentInvoice extends Entity<PaymentInvoiceDto> {
   }
 
   getTransactionFee(): number {
-    return this.cbFee + this.userFee;
+    return this.userFee;
   }
 }

@@ -3,9 +3,13 @@ import { Box, Grid, Typography, useTheme } from "@mui/material";
 import { CbButton } from "../components/Primitive/CbButton/CbButton";
 import { Header } from "../components/Header/Header";
 import { InfoBanner } from "../components/InfoBanner/InfoBanner";
+import { PaymentInvoice, PaymentInvoiceDto } from "../models";
 
 export const InvoiceDetails = () => {
   const theme = useTheme();
+
+  const paymentInvoice = new PaymentInvoice({} as PaymentInvoiceDto);
+  const { consumerNumber, consumerName } = paymentInvoice;
 
   return (
     <Box
@@ -43,7 +47,7 @@ export const InvoiceDetails = () => {
               variant="bodyMedium"
               color={theme.foreground.highEmphasis}
             >
-              12433494392220405
+              {consumerNumber}
             </Typography>
           </Box>
           <Box display="flex" flexDirection="column" mt={3}>
@@ -57,7 +61,7 @@ export const InvoiceDetails = () => {
               variant="bodyMedium"
               color={theme.foreground.highEmphasis}
             >
-              17/02/2023
+              {paymentInvoice.getDueDate().toString()}
             </Typography>
           </Box>
           <Box display="flex" flexDirection="column" mt={3}>
@@ -71,7 +75,7 @@ export const InvoiceDetails = () => {
               variant="bodyMedium"
               color={theme.foreground.highEmphasis}
             >
-              Ahmed Khan
+              {consumerName}
             </Typography>
           </Box>
 
@@ -86,20 +90,20 @@ export const InvoiceDetails = () => {
               variant="bodyMedium"
               color={theme.foreground.highEmphasis}
             >
-              Payment: Rs. 3000
+              Payment: Rs. {paymentInvoice.invoiceAmount}
             </Typography>
             <Typography
               variant="bodyMedium"
               color={theme.foreground.highEmphasis}
             >
-              Transaction Fee: Rs. 15
+              Transaction Fee: Rs. {paymentInvoice.getTransactionFee()}
             </Typography>
             <Box mt={1}>
               <Typography
                 variant="bodyMediumBold"
                 color={theme.foreground.highEmphasis}
               >
-                Total: Rs. 3015
+                Total: Rs. {paymentInvoice.amountWithinDueDate}
               </Typography>
             </Box>
           </Box>
