@@ -1,6 +1,7 @@
 import { Download, InfoOutlined } from "@mui/icons-material";
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Grid, Typography, useTheme } from "@mui/material";
 import { CbButton } from "../components/Primitive/CbButton/CbButton";
+import { Header } from "../components/Header/Header";
 
 export const InvoiceDetails = () => {
   const theme = useTheme();
@@ -11,18 +12,19 @@ export const InvoiceDetails = () => {
       flexDirection="column"
       flex={1}
       height="100vh"
-      paddingTop={2}
-      overflow='hidden'
+      overflow="hidden"
     >
+      <Header isHelpButtonEnabled text="Adayigi Karein" />
       <Box
         alignItems="center"
         bgcolor={theme.background.cardImportant}
         borderRadius={3}
         display="flex"
-        height="15%"
         flexDirection="column"
         justifyContent="center"
         marginX={3}
+        marginTop={2}
+        paddingY={2}
       >
         <InfoOutlined color="info" />
         <Typography variant="bodyXSmall" textAlign="center">
@@ -31,7 +33,6 @@ export const InvoiceDetails = () => {
         </Typography>
       </Box>
       <Box
-        height="65%"
         bgcolor={theme.background.surfaceBasic}
         borderRadius={3}
         marginX={3}
@@ -114,18 +115,20 @@ export const InvoiceDetails = () => {
           </Box>
         </Box>
       </Box>
-      <Box
-        height="15%"
-        display="flex"
-        sx={{ boxShadow: "0px -4px 4px -4px rgba(0,0,0,0.2)" }}
-        marginTop={1}
+      <Grid
+        container
+        spacing={2}
+        paddingBottom={2}
+        paddingX={3}
+        height="100%"
+        alignItems="flex-end"
       >
-        <Box width="100%" marginRight={1} paddingLeft={3} marginTop={3}>
+        <Grid item xs={6}>
           <CbButton fullWidth variant="outlined" size="large">
             <Typography variant="buttonMedium">Instructions</Typography>
           </CbButton>
-        </Box>
-        <Box width="100%" marginLeft={1} paddingRight={3} marginTop={3}>
+        </Grid>
+        <Grid item xs={6}>
           <CbButton
             fullWidth
             variant="contained"
@@ -134,8 +137,8 @@ export const InvoiceDetails = () => {
           >
             <Typography variant="buttonMedium">Download</Typography>
           </CbButton>
-        </Box>
-      </Box>
+        </Grid>
+      </Grid>
     </Box>
   );
 };
