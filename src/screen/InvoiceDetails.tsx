@@ -22,8 +22,8 @@ export const InvoiceDetails = () => {
       <Header isHelpButtonEnabled text="Adayigi Karein" />
       <Box marginX={3} marginTop={2}>
         <InfoBanner
-          text="Yeh 1Bill invoice 17/02/23 1:32 PM par expire hojaye gi, jiskay baad
-        aapko dobara nayi invoice banani hogi"
+          text={`Yeh 1Bill invoice ${paymentInvoice.getExpiryDate()} par expire hojaye gi, jiskay baad
+        aapko dobara nayi invoice banani hogi`}
         />
       </Box>
       <Box
